@@ -3,4 +3,4 @@ project(Tp_sysv2 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Tp_sysv2 main.c)
+add_executable(Tp_sysv2 main.c functions.c functions.h)

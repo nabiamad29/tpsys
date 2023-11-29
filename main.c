@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include "functions.h"
 
 int main() {
-    printf("Hello, World!\n");
+    display_msg();
+    display_prompt();
     return 0;
 }
