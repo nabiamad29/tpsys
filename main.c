@@ -4,5 +4,6 @@
 int main() {
     display_msg();
     display_prompt();
+   // commande();
     return 0;
 }

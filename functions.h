@@ -11,8 +11,9 @@
 #endif //TP_SYSV2_FUNCTIONS_H
 
 #define welcome "Bienvenue dans le Shell ENSEA.\n\r"
-#define prompt "enseash%\n\r"
-
+#define prompt "enseash % "
+#define msg "Today is what h"
 
 void display_msg(void);
 void display_prompt(void);
+void commande (void);
