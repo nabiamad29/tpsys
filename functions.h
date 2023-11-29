@@ -13,7 +13,8 @@
 #define welcome "Bienvenue dans le Shell ENSEA.\n\r"
 #define prompt "enseash % "
 #define SIZE_FUNCTION 512
+#define exitMessage "Bye bye...\n"
 
 void display_msg(void);
 void display_prompt(void);
-void commande (void);
+int commande (void);
