@@ -16,5 +16,6 @@
 #define exitMessage "Bye bye...\n"
 
 void display_msg(void);
-void display_prompt(void);
+void display_prompt(int);
 int commande (void);
+void first_display_prompt();

@@ -12,9 +12,14 @@ void display_msg (void)
 
 }
 
-void display_prompt (void)
-{
-    write(STDOUT_FILENO,prompt,strlen(prompt));
+void first_display_prompt(){
+    write(STDOUT_FILENO, prompt, strlen(prompt));
+}
+
+void display_prompt (int status) {
+    char bufferPrompt[16]={0};
+    sprintf(bufferPrompt,"enseash[exit:%d] %% ", WEXITSTATUS(status));
+    write(STDOUT_FILENO, bufferPrompt, strlen(bufferPrompt));
 }
 
 int commande (void){
@@ -31,9 +36,11 @@ int commande (void){
     }
     if ((pid = fork()) == 0) {
         execlp(readFunction,readFunction,(char) NULL);
+        exit(EXIT_FAILURE);
     }
         else {
             wait(&status);
         }
+        return status;
     }
 
