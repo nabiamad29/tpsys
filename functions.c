@@ -21,11 +21,15 @@ int commande (void){
     pid_t pid;
     int status;
     int exitValue;
+    char readFunction[SIZE_FUNCTION] = {0};
+    read(STDIN_FILENO, readFunction, SIZE_FUNCTION);
+    int deletableChar = strlen(readFunction) - 1;
+    readFunction[deletableChar] = '\0';
+    if (strcmp(readFunction, "exit") == 0) {
+        write(STDOUT_FILENO, exitMessage, strlen(exitMessage));
+        exit (EXIT_SUCCESS);
+    }
     if ((pid = fork()) == 0) {
-        char readFunction[SIZE_FUNCTION] = {0};
-        read(STDIN_FILENO, readFunction, SIZE_FUNCTION);
-        int deletableChar = strlen(readFunction) - 1;
-        readFunction[deletableChar] = '\0';
         execlp(readFunction,readFunction,(char) NULL);
     }
         else {
