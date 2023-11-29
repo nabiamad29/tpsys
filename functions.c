@@ -18,7 +18,10 @@ void display_prompt (void)
 }
 
 void commande (void){
-    char readFunction[512];
-    read(STDIN_FILENO,readFunction,sizeof(readFunction));
-    write(STDOUT_FILENO,readFunction, sizeof(readFunction));
+    char readFunction[SIZE_FUNCTION]={0};
+    read(STDIN_FILENO,readFunction,SIZE_FUNCTION);
+    int deletableChar = strlen(readFunction)-1;
+    readFunction[deletableChar] = '\0';
+    execlp(readFunction,readFunction,(char) NULL);
+    write(STDOUT_FILENO,readFunction,sizeof(readFunction));
 }

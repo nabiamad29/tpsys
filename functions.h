@@ -12,7 +12,7 @@
 
 #define welcome "Bienvenue dans le Shell ENSEA.\n\r"
 #define prompt "enseash % "
-#define msg "Today is what h"
+#define SIZE_FUNCTION 512
 
 void display_msg(void);
 void display_prompt(void);
