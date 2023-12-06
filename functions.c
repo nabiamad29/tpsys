@@ -20,9 +20,18 @@ void first_display_prompt(){
 void display_prompt (int status) {
     u_int64_t t;
     char bufferPrompt[16]={0};
-    t= (end.tv_sec-start.tv_sec)*1000+(end.tv_nsec-start.tv_nsec)/MILLION;
+    char bufferPrompt2[16]={0};
+    if(WIFEXITED(status))
+    {t= (end.tv_sec-start.tv_sec)*1000+(end.tv_nsec-start.tv_nsec)/MILLION;
     sprintf(bufferPrompt,"enseash[exit:%d|%llu ms] %% ", WEXITSTATUS(status),  (long long unsigned) t);
-    write(STDOUT_FILENO, bufferPrompt, strlen(bufferPrompt));
+    write(STDOUT_FILENO, bufferPrompt, strlen(bufferPrompt));}
+
+    else if(WIFSIGNALED(status))
+    {
+        t= (end.tv_sec-start.tv_sec)*1000+(end.tv_nsec-start.tv_nsec)/MILLION;
+        sprintf(bufferPrompt2,"enseash[sign:%d|%llu ms] %% ", WTERMSIG(status),  (long long unsigned) t);
+        write(STDOUT_FILENO, bufferPrompt2, strlen(bufferPrompt2));
+    }
 }
 
 int commande (void){
