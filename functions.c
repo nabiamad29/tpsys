@@ -77,7 +77,25 @@ int commande (void){
         write(STDOUT_FILENO, exitMessage, strlen(exitMessage));
         exit (EXIT_SUCCESS);
     }
+
     if ((pid = fork()) == 0) {
+        /*for (int n = 0; n < 10; ++n) {
+            if(strcmp(args[n],">")==0){
+                char writeDirectory = args[n+1];
+                args[n] = NULL;
+                args[n+1] = NULL;
+                execlp(writeDirectory,args);
+            }
+            else if(strcmp(args[n],"<")==0){
+                char readDirectory = args[n+1];
+                args[n] = NULL;
+                args[n+1] = NULL;
+                execlp(readDirectory,args);
+            }
+            else {
+
+            }
+        }*/
         execvp(args[0],args);
         exit(EXIT_FAILURE);
     }
