@@ -14,7 +14,8 @@
 #define prompt "enseash % "
 #define SIZE_FUNCTION 512
 #define exitMessage "Bye bye...\n"
-
+#define delay 0
+#define BILLION 1000000L;
 void display_msg(void);
 void display_prompt(int);
 int commande (void);
