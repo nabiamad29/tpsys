@@ -20,10 +20,9 @@ le dossier github contenant le code. Une fois ceci fait,il faut compiler et test
 
 ## Utilisation
 Pour pouvoir utiliser le projet ,il faut le compiler puis l'exécuter et saisir une commande sur la fenetre Run.
-Enfin,on tape n'importe quelle commande Linux
+Enfin,on tape n'importe quelle commande Linux pour tester le terminal
 
 ### Commande ls
-
 
 ![commande_ls](https://github.com/nabiamad29/tpsys/assets/153213800/dd13a304-3499-4b4c-99ba-ef82f87df1f4)
 
