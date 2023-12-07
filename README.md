@@ -38,3 +38,7 @@ Enfin,on tape n'importe quelle commande Linux pour tester le terminal
 Pour pouvoir contribuer au projet,il vous suffira juste de prendre le dossier comprenant tous les programmes et de le modifier dans un logiciel de programmation.
 
 ## Ressenti_du_projet
+Ce projet a été difficile à appréhender au début car cela demandait beaucoup de réflexions et de recherche vis à vis du code à écrire puis ca allait naturellement mieux au fur et à mesure que j'avancais sur le projet.
+
+## Licence
+Ce projet est sous licence Académique JetBrains
