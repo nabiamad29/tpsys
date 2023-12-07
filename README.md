@@ -21,7 +21,7 @@ le dossier github contenant le code. Une fois ceci fait,il faut compiler et test
 ## Utilisation
 Pour pouvoir utiliser le projet ,il faut l'exécuter puis saisir une commande sur la fenetre Run
 
-Commande ls
+###Commande ls
 
 
 ![capture_readme](https://github.com/nabiamad29/tpsys/assets/153213800/8e0b0ff4-f2b2-4340-bc62-024458333e57)
