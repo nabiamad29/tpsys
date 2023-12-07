@@ -10,6 +10,8 @@ Ce projet a pour but de recréer un terminal (ou bash ) linux a partir d'un logi
 
 -[Contribution](#contribuer)
 
+-[Ressenti_du_projet](#Ressenti_du_projet)
+
 -[Licence](#licence)
 
 
@@ -31,3 +33,8 @@ Enfin,on tape n'importe quelle commande Linux pour tester le terminal
 
 ### Commande pwd
 ![commande pwd](https://github.com/nabiamad29/tpsys/assets/153213800/365cd240-891f-49be-8d6e-08e6c058f4a9)
+
+## Contribution
+Pour pouvoir contribuer au projet,il vous suffira juste de prendre le dossier comprenant tous les programmes et de le modifier dans un logiciel de programmation.
+
+## Ressenti_du_projet
