@@ -19,7 +19,8 @@ Pour installer le projet ,il faut utiliser un logiciel de programmation et tél�
 le dossier github contenant le code. Une fois ceci fait,il faut compiler et tester le code avec n'importe quel commande linux
 
 ## Utilisation
-Pour pouvoir utiliser le projet ,il faut le compiler puis l'exécuter et saisir une commande sur la fenetre Run. Enfin,on tape n'importe quelle commande Linux
+Pour pouvoir utiliser le projet ,il faut le compiler puis l'exécuter et saisir une commande sur la fenetre Run.
+Enfin,on tape n'importe quelle commande Linux
 
 ### Commande ls
 
